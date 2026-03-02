@@ -10,7 +10,11 @@
 <body>
     <header>
         <nav>
-          <div class="leftNav"></div>
+          <div class="leftNav">
+            <div class="logo">
+                 
+            </div>
+          </div>
           <div class="rightNav">
             <ul class="navItems">
                 <li>home</li>
@@ -58,7 +62,7 @@
                      </div>
                  </div>
                  <div class="propertyBox2">
-                     <button class="propertyBtn">view Details</button>
+                     <button class="propertyBtn" data-id="1" >view Details</button>
                  </div>
             </div>
              
@@ -75,7 +79,7 @@
                      </div>
                  </div>
                  <div class="propertyBox2">
-                     <button class="propertyBtn">view Details</button>
+                     <button class="propertyBtn"  data-id="2">view Details</button>
                  </div>
             </div>
 
@@ -137,7 +141,7 @@
                      <div class="propertyInfo">
                          <div class="PropertyInfoText">
                                  <h4>Rajvadhan Fort Palace</h4>
-                                 <h4 class="InlineBlock">$5-15m </h4> <h6 class="InlineBlock">France</h6>
+                                 <h4 class="InlineBlock">$5-15m| </h4> <h6 class="InlineBlock">France</h6>
                          </div>
                      </div>
                  </div>
@@ -148,6 +152,41 @@
           </div>
 
         </div>
+
+
+        <div id="propertyModal" class="modal">
+  <div class="modal-content">
+
+    <!-- Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Main Image -->
+    <img id="mainImage" src="" class="main-img">
+
+    <!-- Thumbnails -->
+    <div class="thumbnails">
+      <img src="" class="img1">
+      <img src="" class="img2">
+      <img src="" class="img3">
+    </div>
+
+    <!-- Property Info -->
+    <h2 class="name"></h2>
+    <p><strong>$850,000 | <span class="location">Miami</span></strong></p>
+    <p>4 Beds • 4 Baths • 3,200 sqft • 2 Car Garage</p>
+
+    <!-- Map -->
+    <iframe 
+      src="https://www.google.com/maps?q=Miami&output=embed"
+      class="map">
+    </iframe>
+
+    <button class="visit-btn">Schedule a Visit</button>
+
+  </div>
+
+</div>
+
     </section>
 
     <section class="section3">
@@ -193,19 +232,41 @@
             <h2>Client testimonials</h2>
         </div>
         <div class="testimonialBox">
-            <div class="testimonial">
-
-            </div>
-            <div class="testimonial">
-
-            </div>
-
-              <div class="testimonial">
-
+            <div class="testimonial cursive">
+                <div class="Feedbacks">
+                    <p>‵Ishan was fantastic! Helped us find our dream home quickly and smoothly.</p>
+                </div>
+                <div class="FeedbackSupplier">
+                    <p>- Sarah M.</p>
+                </div>
             </div>
 
-              <div class="testimonial">
+            <div class="testimonial cursive">
+                <div class="Feedbacks">
+                    <p>‵Excelent service and very very professional Highly recommended.</p>
+                </div>
+                <div class="FeedbackSupplier">
+                    <p>- john D.</p>
+                </div>
 
+            </div>
+
+              <div class="testimonial cursive">
+                  <div class="Feedbacks">
+                    <p>‵Smooth process and great communication. Truely reliable.</p>
+                </div>
+                <div class="FeedbackSupplier">
+                    <p>- David R.</p>
+                </div>
+            </div>
+
+              <div class="testimonial cursive">
+                   <div class="Feedbacks">
+                    <p>‵Professional, responsive, and easy to work with. Great experience overall</p>
+                </div>
+                <div class="FeedbackSupplier">
+                    <p>- Michael T.</p>
+                </div>
             </div>
         </div> 
     </section>
@@ -218,7 +279,15 @@
              <div class="form"></div>
              <div class="mapArea">
                 <div class="mainContent">
-                      <div class="map"></div>
+                      <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28442.740898410695!2d94.62165428749546!3d26.987709802531448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37473146da8148f7%3A0xa898d580278cdfe6!2sSivasagar%2C%20Assam%2C%20India!5e0!3m2!1sen!2ssg!4v1772439675287!5m2!1sen!2ssg" 
+                        width="600" height="450"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                      <div class="contactInfo">
+                            <p><i class="fa-solid fa-phone"></i> call: 123-456-7890</p>
+                            <p><i class="fa-solid fa-envelope"></i> Email: info@example.com</p>
+                            <p><i class="fa-solid fa-location-dot"></i> 123 Main St, Cityville.</p>
+                      </div>
                 </div>
              </div>
          </div>

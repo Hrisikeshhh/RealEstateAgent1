@@ -1,0 +1,17 @@
+[{
+    "id":1,
+    "mainImg":"house/villaTown.png",
+    "name":"Modern Family Home",
+    "location":"Los Angeles",
+    "img1":"Rooms/Property1/property1Bed (2).png",
+    "img2":"Rooms/Property1/property1dining.png",
+    "img3":"Rooms/Property1/Property1Garage.png"
+
+},
+{
+    "id":2,
+    "mainImg":"house/property2.png",
+    "name":"Luxury Modern Pool Villa"
+}
+
+]
