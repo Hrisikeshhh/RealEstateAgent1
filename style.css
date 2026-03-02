@@ -5,6 +5,55 @@
     box-sizing: border-box;
 }
 
+.InlineBlock{
+    display: inline-block;
+}
+
+.property1{
+    background-image: url(house/villaTown.png);
+    background-size: cover;
+}
+
+.property2{
+    background-image: url(house/property2.png);
+    background-size: cover;
+}
+
+.property3{
+    background-image: url(house/property3.png);
+    background-size: cover;
+}
+
+.property4{
+    background-image: url(house/property4.png);
+    background-size: cover;
+}
+
+.property5{
+    background-image: url(house/property5.png);
+    background-size: cover;
+}
+
+.property6{
+    background-image: url(house/property6.png);
+    background-size: cover;
+}
+
+.buying{
+    background-image: url(logo/buying.png);
+    background-size: cover;
+}
+
+.Selling{
+   background-image: url(logo/selling.png);
+   background-size: cover
+}
+
+.consultation{
+    background-image: url(logo/consultation.png);
+    background-size: cover;
+}
+
 nav{
     border: 1px solid ;
     height: 10vh;
@@ -148,6 +197,7 @@ nav{
     background-color: #f7f7f7;
     height: 50vh;
     display: flow-root;
+     font-family:'poppins','inter','Roboto','Montserrat','Open Sans'
 }
 
 
@@ -166,10 +216,179 @@ nav{
 }
 
 .box{
+    box-shadow: 1px 3px 15px;
+    margin:0% 1%;
+    border-radius: 12px;
+    width: 29%;
+    height: 94%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.propertyBox{
+    height: 80%;
+}
+
+.propertyBox2{
+    display: flex;
+    align-items: center;
+    height: 15%;
+    justify-content: center;
+}
+
+.propertImg{
+    height: 80%;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.propertyInfo{
+    background-color: #2c5985;
+    height: 20%;
+    color: #fff;
+    display: flow-root; 
+}
+
+.PropertyInfoText{
+    width: 79%;
+    margin: 0% 10.5%;
+    margin-top: 1%;
+    font-size: 90%;
+    height: 75%;
+}
+
+.propertyBtn{
+    padding: 1%;
+    font-size: 103%;
+    background-color: #5c5ce0;
+    cursor: pointer;
+    color: white;
+    border: 0.5px solid black;
+}
+
+.section3{
+    height: 100vh;
+}
+
+.Services{
+       height: 40%;
+       background-color: #f7f7f7;
+       display: flex;
+       justify-content: space-evenly;
+        font-family:'poppins','inter','Roboto','Montserrat','Open Sans'
+}
+
+.service{
+    width: 30%;
+}
+
+.ServiceLogo{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ServiceImg{
+    height: 76%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.serviceInfo{
+   height: 30%;
+   text-align: center;
+   font-size: 70%;
+   color: #2c3E50;
+}
+
+.testimonialBox{
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 85%;
+    margin: 0% 7.5%;
+    height: 26%;
+    overflow-x: auto;
+}
+
+
+
+.testimonial{
     border: 1px solid;
     border-radius: 12px;
-    width: 43%;
-    height: 94%;
+    width: 48%;
+    background-color: #f7f7f7;
+    height: 84%;
     display: inline-block;
 }
 
+.testimonialBox::-webkit-scrollbar
+{
+    display: none;
+}
+
+.section4{
+    height: 100vh;
+    display: flow-root;
+}
+
+.connectHead{
+     margin-top: 0%;
+}
+
+.connect{
+    background-color: #f7f7f7;
+    height: 85%;
+    display: flex;
+}
+
+.form{
+    width: 40%;
+    height: 100%;
+}
+
+.mapArea{
+    width: 60%;
+    height: 100%;
+}
+
+.mainContent{
+    width: 85%;
+    height: 81%;
+    margin: 7%;
+}
+
+.map{
+    border: 1px solid;
+    height: 46%;
+}
+
+.Footer{
+    background-color: #2c3E50;
+    margin-top: 0%;
+    color: #fff;
+}
+
+.Footer h2::before,
+.Footer h2::after{
+    content:"";
+    position:absolute;
+    width:100px;
+    height:1px;
+   background-color: #fff;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.Footer h2::before{
+    left:-120px;
+}
+
+.Footer h2::after{
+    right:-120px;
+}
+
+footer{
+    height: 10vh;
+    background-color: #2c3E50;
+}
