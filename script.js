@@ -60,6 +60,7 @@ fetch('data.json')
             document.querySelector('.img3').src = items.img3;
             document.querySelector('.name').textContent = items.name;
             document.querySelector('.location').textContent = items.location;
+            document.querySelector('.map').src = items.Embed;
             
           }
 

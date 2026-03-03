@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 .cursive{
@@ -538,4 +539,121 @@ nav{
 footer{
     height: 10vh;
     background-color: #2c3E50;
+}
+
+
+@media(max-width:800px)
+{
+    .navItems{
+        flex-direction: column;
+        background-color: #132f7873;
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        right: 100%;
+        align-items: center;
+    }
+
+    .section1 {
+    height: 200vh;
+}
+
+ .Hero {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero1{
+    width: 100%
+}
+
+.heroInfo {
+    margin: 50% 7%;
+    height: 55%;
+    width: 78%;
+}
+
+.hero2 {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMe {
+    padding: 4%;
+    font-size: 85%;
+    height: 20vh;
+}
+
+.section-title {
+    font-size: 43%;
+}
+
+.section2 {
+    height: 320vh;
+    display: flow-root;
+}
+
+.productContainer {
+    
+    height: 288vh;
+   
+}
+
+.overflow {
+    width: 87%;
+    margin: 0% 7.5%;
+    margin-top: 3%;
+    overflow: hidden;
+    height: 97%;
+    white-space: normal;
+}
+
+.box {
+    margin: 4% 1%;
+    width: 95%;
+    height: 15%;
+}
+
+.section3 {
+    height: 262vh;
+}
+
+.thumbnails img {
+    cursor: pointer;
+    z-index: 9999;
+    width: 27%;
+    border-radius: 6px;
+}
+
+.Services {
+    height: 40%;
+    flex-direction: column
+}
+
+.service {
+    width: 97%;
+    height: 41%;
+}
+
+.testimonialBox {
+    width: 85%;
+    margin: 0% 7.5%;
+     white-space: normal;
+    display: block;
+    height: 54%;
+}
+
+.testimonial {
+    border-radius: 12px;
+    font-size: 74%;
+    width: 98%;
+    background-color: #ece5e5;
+    height: 21%;
+    margin: 7% 1%;
+    vertical-align: top;
+}
+
 }
