@@ -17,6 +17,7 @@
           </div>
           <div class="rightNav">
             <ul class="navItems">
+                <i class="fa-solid fa-circle-xmark" id="cross"></i>
                 <li>home</li>
                 <li class="properties">Properties</li>
                 <li>About</li>
@@ -24,6 +25,7 @@
                 <li><Button id="navBtn">Schedule a consultation</Button></li>
             </ul>
           </div>
+          <i class="fa-solid fa-bars" id="Menu"></i>
         </nav>
     </header>
     <section class="section1">
@@ -43,7 +45,7 @@
             <h2>About me</h2>
         </div>
         <div class="aboutMe">
-            Experienced in helping you buy and sell homes with ease. Dedicated to finding your perfect property.
+           <p class="A">Experienced in helping you buy and sell homes with ease. Dedicated to finding your perfect property.</p> 
         </div>
 
         <div class="section-title">
@@ -199,8 +201,8 @@
                       <div class="ServiceImg buying"></div>
                  </div>
                  <div class="serviceInfo">
-                      <h1>Buying a Home</h1>
-                      <p>Helping you find your dream home</p>
+                      <h1 class="a">Buying a Home</h1>
+                      <p class="a">Helping you find your dream home</p>
                  </div>
             </div>
 
@@ -210,8 +212,8 @@
                       <div class="ServiceImg Selling"></div>
                  </div>
                  <div class="serviceInfo">
-                     <h1>Selling your home</h1>
-                     <p>Get the best for your property</p>
+                     <h1 class="B">Selling your home</h1>
+                     <p class="B">Get the best for your property</p>
                  </div>
             </div>
 
@@ -221,8 +223,8 @@
                       <div class="ServiceImg consultation"></div>
                  </div>
                  <div class="serviceInfo">
-                      <h1>Property Consultation</h1>
-                      <p>Expert advice on real Estate</p>
+                      <h1 class="b">Property Consultation</h1>
+                      <p class="b">Expert advice on real Estate</p>
                  </div>
             </div>
 
@@ -290,10 +292,10 @@
                              </label>
                              <label>
                                Your message:
-                              <textarea name="message"></textarea>
+                              <textarea name="message" rows="6" cols="32" class="textAreaa"></textarea>
                                </label>
                              <!-- your other form fields go here -->
-                                     <button type="submit">Send</button>
+                                     <button type="submit" class="submit">Send</button>
                         </form>
              </div>
              <div class="mapArea">
@@ -303,9 +305,9 @@
                         width="600" height="450"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                       </div>
                       <div class="contactInfo">
-                            <p><i class="fa-solid fa-phone"></i> call: 123-456-7890</p>
-                            <p><i class="fa-solid fa-envelope"></i> Email: info@example.com</p>
-                            <p><i class="fa-solid fa-location-dot"></i> 123 Main St, Cityville.</p>
+                            <p class="C"><i class="fa-solid fa-phone "></i> call: 123-456-7890</p>
+                            <p class="C"><i class="fa-solid fa-envelope "></i> Email: info@example.com</p>
+                            <p class="C"><i class="fa-solid fa-location-dot"></i> 123 Main St, Cityville.</p>
                       </div>
                 </div>
              </div>
@@ -319,7 +321,8 @@
         
     </footer>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
     <script src="script.js"></script>
 </body>
 </html>

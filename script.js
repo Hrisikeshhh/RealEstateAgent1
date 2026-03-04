@@ -67,4 +67,162 @@ fetch('data.json')
          })
   }) 
 
+  let desktop = gsap.matchMedia();
+
+    desktop.add('(min-width:800px)',()=>{
+      let tl = gsap.timeline();
+  tl.from('.A',{
+    y:70,
+    stagger:0.4,
+    opacity:0,
+    scrollTrigger:{
+      scroller:'body',
+      trigger:'.A',
+      scrub:2,
+      start:'top 85%',
+      end:'top 60%'
+    }
+  })
+
+
+tl.from('.a',{
+    y:70,
+    stagger:0.4,
+    opacity:0,
+    scrollTrigger:{
+      scroller:'body',
+      trigger:'.a',
+      scrub:2,
+      start:'top 85%',
+      end:'top 60%'
+    }
+  })
+
+  tl.from('.B',{
+    y:70,
+    stagger:0.4,
+    opacity:0,
+    scrollTrigger:{
+      scroller:'body',
+      trigger:'.B',
+      scrub:2,
+      start:'top 85%',
+      end:'top 60%'
+    }
+  })
+
+  tl.from('.b',{
+    y:70,
+    stagger:0.4,
+    opacity:0,
+    scrollTrigger:{
+      scroller:'body',
+      trigger:'.b',
+      scrub:2,
+      start:'top 85%',
+      end:'top 60%'
+    }
+  })
+
+  tl.from('.C',{
+    y:70,
+    stagger:0.4,
+    opacity:0,
+    scrollTrigger:{
+      scroller:'body',
+      trigger:'.C',
+      scrub:2,
+      start:'top 85%',
+      end:'top 60%'
+    }
+  })
+
+  tl.from('.c',{
+    y:70,
+    stagger:0.4,
+    opacity:0,
+    scrollTrigger:{
+      scroller:'body',
+      trigger:'.c',
+      scrub:2,
+      start:'top 85%',
+      end:'top 60%'
+    }
+  })
+
+  tl.from('.D',{
+    y:70,
+    stagger:0.4,
+    opacity:0,
+    scrollTrigger:{
+      scroller:'body',
+      trigger:'.D',
+      scrub:2,
+      start:'top 85%',
+      end:'top 60%'
+    }
+  })
+
+  tl.from('.d',{
+    y:70,
+    stagger:0.4,
+    opacity:0,
+    scrollTrigger:{
+      scroller:'body',
+      trigger:'.d',
+      scrub:2,
+      start:'top 85%',
+      end:'top 60%'
+    }
+  })
+
+  tl.from('.E',{
+    y:70,
+    stagger:0.4,
+    opacity:0,
+    scrollTrigger:{
+      scroller:'body',
+      trigger:'.E',
+      scrub:2,
+      start:'top 85%',
+      end:'top 60%'
+    }
+  })
+
+
+    })
+
+
+  let mobile = gsap.matchMedia();
+mobile.add('(max-width:800px)',()=>{
+      let tl2 = gsap.timeline();
+      let menu = document.querySelector('#Menu');
+      let close = document.querySelector('#cross');
+
+      tl2.to('.navItems',{
+          x:'100vw',
+          duration:0.3
+      })
+      tl2.from('.item',{
+          x:20,
+          stagger:0.3,
+          opacity:0
+      })
+
+      tl2.pause();
+
+      menu.addEventListener('click',()=>{
+        tl2.play();
+      })
+      close.addEventListener('click',()=>{
+        tl2.reverse();
+      })
+})
+
+
+
+
+
+
+
 })
