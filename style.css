@@ -459,6 +459,37 @@ nav{
     display: none;
 }
 
+.testimonialClips{
+    height: 50vh;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clipsContainer{
+    height: 90%;
+    border: 1px solid;
+    width: 90%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0%;
+}
+
+.clipBox{
+   border: 1px solid;
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    margin: 0% 1%;
+   
+}
+
+.clipsContainer::-webkit-scrollbar{
+   display: none;
+}
+
 .section4{
     height: 100vh;
     display: flow-root;
@@ -609,7 +640,7 @@ footer{
 }
 
     .section1 {
-    height: 200vh;
+    height: 190vh;
 }
 
  .Hero {
@@ -620,7 +651,8 @@ footer{
 }
 
 .hero1{
-    width: 100%
+    width: 100%;
+    height:90vh;
 }
 
 .heroInfo {
@@ -631,7 +663,7 @@ footer{
 
 .hero2 {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .aboutMe {
