@@ -1,29 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{
 
-  // nav Btns
-  let propertiesLocation = document.querySelector('.productContainer');
-  let Properties = document.querySelector('.properties');
-  Properties.addEventListener('click',()=>{
-   propertiesLocation.scrollIntoView({
-    behavior:"smooth"
-     })
-  })
 
-
-  let aboutLocation = document.querySelector('.section2');
-  let about = document.querySelector('.About');
-  about.addEventListener('click',()=>{
-    aboutLocation.scrollIntoView({
-        behavior:"smooth"
-    } )
-  })
-
-  let testimonialLocation = document.querySelector('.testimonialBox');
-   document.querySelector('.Testimonials').addEventListener('click',()=>{
-    testimonialLocation.scrollIntoView({
-      behavior:"smooth"
-    })
-  })
+ 
 
 
 
@@ -244,6 +222,34 @@ mobile.add('(max-width:800px)',()=>{
       close.addEventListener('click',()=>{
         tl2.reverse();
       })
+
+       // nav Btns
+  let propertiesLocation = document.querySelector('.productContainer');
+  let Properties = document.querySelector('.properties');
+  Properties.addEventListener('click',()=>{
+   propertiesLocation.scrollIntoView({
+    behavior:"smooth"
+     })
+     tl2.reverse();
+  })
+
+
+  let aboutLocation = document.querySelector('.section2');
+  let about = document.querySelector('.About');
+  about.addEventListener('click',()=>{
+    aboutLocation.scrollIntoView({
+        behavior:"smooth"
+    } )
+    tl2.reverse();
+  })
+
+  let testimonialLocation = document.querySelector('.testimonialBox');
+   document.querySelector('.Testimonials').addEventListener('click',()=>{
+    testimonialLocation.scrollIntoView({
+      behavior:"smooth"
+    })
+    tl2.reverse();
+  })
 })
 
 
