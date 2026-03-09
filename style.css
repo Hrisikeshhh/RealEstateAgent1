@@ -217,7 +217,7 @@ nav{
 .productContainer{
     background-color: #f7f7f7;
     height: 50vh;
-    display: flow-root;
+    display: flex;
      font-family:'poppins','inter','Roboto','Montserrat','Open Sans'
 }
 
@@ -233,7 +233,38 @@ nav{
 }
 
 .overflow::-webkit-scrollbar{
-    display: none;
+    display: none; 
+}
+
+.leftArrow{
+    width: 10%;
+    height: 14%;
+    margin: 13.1% 0%;
+    cursor: pointer;
+    font-size: 249%;
+    border: none;
+    background-color: #f7f7f7;
+}
+
+.overflow{
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 80%;
+    margin: 0% 2.5%;
+    margin-top: 3%;
+    height: 85%;
+    overflow-x: auto;
+}
+
+
+.rightArrow{
+    width: 10%;
+    height: 14%;
+    cursor: pointer;
+    margin: 13.1% 0%;
+    font-size: 249%;
+    border: none;
+    background-color: #f7f7f7;
 }
 
 .box{
@@ -434,10 +465,35 @@ nav{
 .testimonialBox{
     overflow-y: hidden;
     white-space: nowrap;
-    width: 85%;
-    margin: 0% 7.5%;
-    height: 26%;
+    width: 80%;
+    height: 95%;
     overflow-x: auto;
+}
+
+.reviewContact{
+    display: flex;
+    height: 45vh;
+    background: white;
+}
+
+.reviewLeftArrow{
+    width: 10%;
+    height: 14%;
+    cursor: pointer;
+    margin: 13.1% 0%;
+    font-size: 249%;
+    border: none;
+    background-color: white;
+}
+
+.reviewRightArrow{
+    width: 10%;
+    height: 14%;
+    cursor: pointer;
+    margin: 13.1% 0%;
+    font-size: 249%;
+    border: none;
+    background-color: white;
 }
 
 
@@ -476,7 +532,7 @@ nav{
 
 .testimonialBox::-webkit-scrollbar
 {
-    display: none;
+    display: none; 
 }
 
 .testimonialClips{
@@ -509,7 +565,7 @@ nav{
 }
 
 .clipsContainer::-webkit-scrollbar{
-   display: none;
+    display: none; 
 }
 
 .section4{
@@ -717,6 +773,16 @@ footer{
     height: 97%;
     white-space: normal;
 }
+
+.leftArrow {
+    display: none;
+}
+
+.rightArrow {
+    border: none;
+}
+
+
 
 .box {
     margin: 4% 1%;

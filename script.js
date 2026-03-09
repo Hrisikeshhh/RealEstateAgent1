@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded',()=>{
 
 
- 
-
-
-
     function openModal() {
   document.getElementById("propertyModal").style.display = "block";
 }
@@ -85,7 +81,7 @@ fetch('data.json')
   }) 
 
   // counter
-  //  clients Counter
+  
 
  function animateCount(element, target) {
     let count = 0;
@@ -118,12 +114,11 @@ fetch('data.json')
 
 
 
-  // Use IntersectionObserver so it starts when div is visible
   const clientDiv1 = document.getElementById("clientServed");
   const observer1 = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
-      animateCount(clientDiv1, 35); // suppose 1500 clients
-      observer1.disconnect(); // run only once
+      animateCount(clientDiv1, 35); 
+      observer1.disconnect(); 
     }
   });
 
@@ -131,23 +126,22 @@ fetch('data.json')
 
 
 
-  // Use IntersectionObserver so it starts when div is visible
+  
   const clientDiv2 = document.getElementById("propertiesListed");
   const observer2 = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
-      animateCount(clientDiv2, 50); // suppose 1500 clients
-      observer2.disconnect(); // run only once
+      animateCount(clientDiv2, 50); 
+      observer2.disconnect(); 
     }
   });
 
   observer2.observe(clientDiv2);
 
-// Use IntersectionObserver so it starts when div is visible
   const clientDiv3 = document.getElementById("rating");
   const observer3 = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
-      animateCount(clientDiv3, 4.5); // suppose 1500 clients
-      observer3.disconnect(); // run only once
+      animateCount(clientDiv3, 4.5); 
+      observer3.disconnect(); 
     }
   });
 
@@ -332,10 +326,34 @@ mobile.add('(max-width:800px)',()=>{
     })
     tl2.reverse();
   })
+
+  document.querySelector('#navBtn').addEventListener('click',()=>{
+    document.querySelector('.form').scrollIntoView({
+      behavior:"smooth"
+    })
+    tl2.reverse();
+  })
+
+
 })
 
 
+// propertyContainerArrows
 
+document.querySelector('.rightArrow').addEventListener('click',()=>{
+  document.querySelector('.overflow').scrollBy({
+    left:300,
+    behavior:"smooth"
+  })
+})
+
+
+document.querySelector('.leftArrow').addEventListener('click',()=>{
+  document.querySelector('.overflow').scrollBy({
+    left:-300,
+    behavior:"smooth"
+  })
+})
 
 
 
