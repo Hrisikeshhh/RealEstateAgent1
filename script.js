@@ -388,5 +388,16 @@ document.querySelector('.clipRightArrow').addEventListener('click',()=>{
   })
 })
 
+ let visitBtn = document.querySelectorAll('.visit-btn');
+
+visitBtn.forEach((Btn)=>{
+   Btn.addEventListener('click',()=>{
+  const propertyName =document.querySelector('.name').textContent;
+
+  window.location.href = `contact.html?property=${encodeURIComponent(propertyName)}`;
+})
+})
+
+
 
 })

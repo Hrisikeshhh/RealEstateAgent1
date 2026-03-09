@@ -50,3 +50,41 @@ nav{
 .navItems li{
     cursor: pointer;
 }
+
+.form{
+    width: 40%;
+    height: 100%;
+     font-family:'poppins','inter','Roboto','Montserrat','Open Sans';
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 8% 16%;
+    height: 47%;
+    justify-content: space-around;
+}
+
+form input{
+    display: block;
+    padding: 1%;
+    width: 88%;
+}
+
+.textAreaa{
+   display: block;
+}
+
+.submit{
+    width: 31%;
+    padding: 1%;
+    color: white;
+    background-color: #2c3E50;
+}
+
+.section1{
+   display: flex;
+   height: 90vh;
+   align-items: center;
+   justify-content: center;
+}
