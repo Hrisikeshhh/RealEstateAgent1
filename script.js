@@ -35,6 +35,11 @@ window.onclick = function(event) {
 })
 
 // navigations btns
+document.querySelector('.properties').addEventListener('click',()=>{
+  document.querySelector('.productContainer').scrollIntoView({
+    behavior:"smooth"
+  })
+})
 
 document.querySelector('.visit-btn').addEventListener('click',()=>{
   window.location.href = "contact.html";
@@ -355,7 +360,33 @@ document.querySelector('.leftArrow').addEventListener('click',()=>{
   })
 })
 
+document.querySelector('.reviewRightArrow').addEventListener('click',()=>{
+  document.querySelector('.testimonialBox').scrollBy({
+    left:300,
+    behavior:"smooth"
+  })
+})
 
+document.querySelector('.reviewLeftArrow').addEventListener('click',()=>{
+  document.querySelector('.testimonialBox').scrollBy({
+    left:-300,
+    behavior:"smooth"
+  })
+})
+
+document.querySelector('.clipLeftArrow').addEventListener('click',()=>{
+  document.querySelector('.clipsContainer').scrollBy({
+    left:-300,
+    behavior:"smooth"
+  })
+})
+
+document.querySelector('.clipRightArrow').addEventListener('click',()=>{
+  document.querySelector('.clipsContainer').scrollBy({
+    left:300,
+    behavior:"smooth"
+  })
+})
 
 
 })
