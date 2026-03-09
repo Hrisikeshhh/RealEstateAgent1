@@ -71,13 +71,14 @@ form input{
     width: 88%;
 }
 
-.textAreaa{
-   display: block;
+.textAreaa {
+    display: block;
+    padding: 7%;
 }
 
 .submit{
     width: 31%;
-    padding: 1%;
+    padding: 5%;
     color: white;
     background-color: #2c3E50;
 }
@@ -87,4 +88,16 @@ form input{
    height: 90vh;
    align-items: center;
    justify-content: center;
+}
+
+@media(max-width:800px)
+{
+    
+    form{
+        height: 70%;
+}
+
+ .logo {
+    width: 68%;
+}
 }
